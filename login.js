@@ -1,0 +1,2 @@
+document.querySelector('#login-form').onsubmit=e=>{e.preventDefault();const user=document.querySelector('#username').value.trim().toLowerCase(),password=document.querySelector('#password').value;if(user==='onedaycafe'&&password==='OneDay!2026'){sessionStorage.setItem('oneday-admin','1');location.href='admin-dashboard.html'}else document.querySelector('#login-error').textContent='Kullanıcı adı veya şifre hatalı.'};
+document.querySelector('#toggle-password').onclick=()=>{const input=document.querySelector('#password');input.type=input.type==='password'?'text':'password'};
